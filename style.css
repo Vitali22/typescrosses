@@ -1,0 +1,21 @@
+ #art {
+   display: table;
+   border-spacing: 1px;
+   background-color: black;
+   border: 5px solid black;
+ }
+ .fila {
+   display: table-row;
+ }
+ .pixelNegro {
+   display: table-cell;
+   background-color:black;
+   width: 40px;
+   height: 40px;
+ }
+  .pixelBlanco {
+   display: table-cell;
+   background-color:white;
+   width: 40px;
+   height: 40px;
+ }
