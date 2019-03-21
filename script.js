@@ -2,6 +2,7 @@ new Vue({
   el: '#v-for-object',
   data: {
 
+  	poblacion:[],
     gene : {
     	cromosoma1:'pixelNegro',
     	cromosoma2:'pixelBlanco',
@@ -23,8 +24,22 @@ new Vue({
     	cromosoma18:'pixelBlanco',
     	cromosoma19:'pixelNegro',
     	cromosoma20:'pixelBlanco'
+    },
+  },
+  export default {
+  methods : {
+
+    cromosomasRandom : function(gene){
+
+      if (Math.random()<.5) {
+       this.poblacion.gene.cormosoma='pixelBlanco';
+       else{
+       	this.poblacion.gene.cromosoma='pixelNegro';
+       }
+      }
+
+      return
     }
-
-
   }
+}
 })
