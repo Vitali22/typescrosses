@@ -7,7 +7,7 @@
  .fila {
    display: table-row;
  }
- .1 {
+ .pixelNegro {
    display: table-cell;
    background-color:black;
    width: 40px;

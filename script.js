@@ -1,13 +1,8 @@
 new Vue({
   el: '#v-for-object',
   data: {
-    object: {
-      firstName: 'John',
-      lastName: 'Doe',
-      age: 30
-    },
 
-        gene: {
+    gene : {
     	cromosoma1:'pixelNegro',
     	cromosoma2:'pixelBlanco',
     	cromosoma3:'pixelNegro',

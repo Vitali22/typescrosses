@@ -11,7 +11,7 @@
         <widget>
             <br><br>
             <div class="alert alert-primary" role="alert">
-                    Vector Random
+                Vector de randoms
             </div>
             <div id="art">
                 <div id="v-for-object" class="fila">
