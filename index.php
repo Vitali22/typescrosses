@@ -11,7 +11,7 @@
         <widget>
             <br><br>
             <div class="alert alert-primary" role="alert">
-                Vector de randoms
+  This is a primary alert—check it out!
             </div>
             <div id="art">
                 <div id="v-for-object" class="fila">
