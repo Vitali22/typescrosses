@@ -12,12 +12,13 @@
     <div class="jumbotron" id="v-for-object">
         <div class="row-xs-12">
             <div class="alert alert-primary text-center" role="alert">
-                Types of genetic crosses 
+                Types of genetic crosses
             </div>
             <center>
-                <button type="button" class="btn btn-outline-success">Type of crossing 1</button>
-                <button type="button" class="btn btn-outline-success">Type of crossing 2</button>
-                <button type="button" class="btn btn-outline-success">Type of crossing 3</button>
+                <button class="btn btn-outline-success">Type of crossing 1</button>
+                <button class="btn btn-outline-success">Type of crossing 2</button>
+                <button class="btn btn-outline-success">Type of crossing 3</button>
+                <button class="btn btn-outline-success" v-on:click="fillPopulation()">Fill Population</button>
             </center>
         </div>
         <div class="main row jumbotron">
@@ -25,9 +26,9 @@
                 <center>
                     <h1>Random Gene</h1>
                     <div id="art">
-                        <div v-for="n in 100">
+                        <div v-for="genes in population">
                             <div class="fila">
-                                <div v-for="value in gene" v-bind:class="value"></div>
+                                <div v-for="chromosome in genes" v-bind:class="chromosome"></div>
                             </div>
                         </div>
                     </div>
@@ -36,14 +37,7 @@
             <div class="container col-md-6">
                 <center>
                     <h1>Best Gene</h1>
-                    <div id="art">
-                        <div v-for="n in 100">
-                            <div class="fila">
-                                <div></div>
-                                <div v-for="value in gene" v-bind:class="value"></div>
-                            </div>
-                        </div>
-                    </div>
+
                 </center>
             </div>
         </div>
