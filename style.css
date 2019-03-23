@@ -10,12 +10,12 @@
  .bluePixel {
    display: table-cell;
    background-color:blue;
-   width: 10px;
-   height: 10px;
+   width: 5px;
+   height: 5px;
  }
-  .redPixel {
+ .redPixel {
    display: table-cell;
    background-color:red;
-   width: 10px;
-   height: 10px;
+   width: 5px;
+   height: 5px;
  }
