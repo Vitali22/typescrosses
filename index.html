@@ -22,6 +22,9 @@
                 <button class="btn btn-outline-danger" v-on:click="fillPopulation()" v-bind:disabled="population.length > 0">
                     Fill Population
                 </button>
+                <button class="btn btn-outline-danger" v-on:click="emptyPopulation()" v-bind:disabled="population.length == 0">
+                    Empty Population
+                </button>
             </center>
         </div>
         <div class="main row jumbotron">
@@ -35,6 +38,7 @@
                             </div>
                         </div>
                     </div>
+                    <br><br>
                 </center>
             </div>
             <div class="container col-md-6">

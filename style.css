@@ -10,14 +10,14 @@
  .bluePixel {
    display: table-cell;
    background-color:blue;
-   width: 5px;
-   height: 5px;
+   width: 25px;
+   height: 25px;
  }
  .redPixel {
    display: table-cell;
    background-color:red;
-   width: 5px;
-   height: 5px;
+   width: 25px;
+   height: 25px;
  }
  .container{
     background-color:#27a5cc44;

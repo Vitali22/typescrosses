@@ -24,6 +24,9 @@ new Vue({
 				}
 				this.population.push(gene)
 			};
+		},
+		emptyPopulation: function () {
+				this.population=[];
 		}
 	},
 	mounted() {
