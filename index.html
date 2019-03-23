@@ -18,13 +18,16 @@
                 <button class="btn btn-outline-success">Type of crossing 1</button>
                 <button class="btn btn-outline-success">Type of crossing 2</button>
                 <button class="btn btn-outline-success">Type of crossing 3</button>
-                <button class="btn btn-outline-success" v-on:click="fillPopulation()">Fill Population</button>
+                <br><br>
+                <button class="btn btn-outline-danger" v-on:click="fillPopulation()" v-bind:disabled="population.length > 0">
+                    Fill Population
+                </button>
             </center>
         </div>
         <div class="main row jumbotron">
             <div class="container col-md-6">
                 <center>
-                    <h1>Random Gene</h1>
+                    <h1>Random Population</h1>
                     <div id="art">
                         <div v-for="genes in population">
                             <div class="fila">
