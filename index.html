@@ -12,36 +12,39 @@
     <div class="jumbotron" id="v-for-object">
         <div class="row-xs-12">
             <div class="alert alert-primary text-center" role="alert">
-                Types of genetic crosses
+                Types of genetic crosses 
             </div>
-            <br>
             <center>
                 <button type="button" class="btn btn-outline-success">Type of crossing 1</button>
-                <button type="button" class="btn btn-outline-success">Type of crossing 1</button>
-                <button type="button" class="btn btn-outline-success">Type of crossing 1</button>
+                <button type="button" class="btn btn-outline-success">Type of crossing 2</button>
+                <button type="button" class="btn btn-outline-success">Type of crossing 3</button>
             </center>
         </div>
         <div class="main row jumbotron">
             <div class="container col-md-6">
-                Gene 0
-                <div id="art">
-                    <div v-for="n in 100">
-                        <div class="fila">
-                            <div v-for="value in gene" v-bind:class="value"></div>
+                <center>
+                    <h1>Random Gene</h1>
+                    <div id="art">
+                        <div v-for="n in 100">
+                            <div class="fila">
+                                <div v-for="value in gene" v-bind:class="value"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </center>
             </div>
             <div class="container col-md-6">
-                Best Gene
-                <div id="art">
-                    <div v-for="n in 100">
-                        <div class="fila">
-                            <div></div>
-                            <div v-for="value in gene" v-bind:class="value"></div>
+                <center>
+                    <h1>Best Gene</h1>
+                    <div id="art">
+                        <div v-for="n in 100">
+                            <div class="fila">
+                                <div></div>
+                                <div v-for="value in gene" v-bind:class="value"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </center>
             </div>
         </div>
     </div>

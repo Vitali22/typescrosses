@@ -19,3 +19,9 @@
    width: 5px;
    height: 5px;
  }
+ .container{
+    background-color:#27a5cc44;
+    border-radius: 100px;
+    border: 10px solid #31c73d57;
+    justify-content: center;
+ }

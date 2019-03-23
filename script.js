@@ -3,6 +3,7 @@ new Vue({
   data: {
 
   gene: {
+		
     	cromosoma1:"bluePixel",
     	cromosoma2:"redPixel",
     	cromosoma3:"bluePixel",
@@ -51,7 +52,7 @@ new Vue({
 	},
 	methods: {
 		colorPixel : function(){
-			if((Math.floor(Math.random() * (10 - 1 + 1)) + 1)>0){
+			if((Math.random())>0){
 				return "bluePixel";
 			}
 			else{
