@@ -15,21 +15,28 @@ new Vue({
 			}
 		},
 		fillPopulation: function () {
-			for (countGene = 0; countGene < 100; countGene++) {
+			for (countGene = 0; countGene < 20; countGene++) {
 				gene = [];
 				for (countChromosome = 0; countChromosome < 20; countChromosome++) {
-					cromosoma = '';
-					cromosoma = this.colorPixel();
-					gene.push(cromosoma)
+					cromosoma = [
+						color = "",
+						chromosomeNumber = 0,
+						geneNumber = 0,
+					];
+					cromosoma.color = this.colorPixel();
+					cromosoma.chromosomeNumber = countChromosome;
+					cromosoma.geneNumber = countGene;
+					gene.push(cromosoma);
 				}
-				this.population.push(gene)
+				this.population.push(gene);
 			};
 		},
 		emptyPopulation: function () {
-				this.population=[];
+			this.population = [];
 		}
 	},
 	mounted() {
-		//this.colorPixel;
 	},
 })
+
+//Make a function to know if chromosomeValue is 0 or 1

@@ -34,7 +34,7 @@
                     <div id="art">
                         <div v-for="genes in population">
                             <div class="fila">
-                                <div v-for="chromosome in genes" v-bind:class="chromosome"></div>
+                                <div v-for="chromosome in genes" v-bind:class="chromosome.color"></div>
                             </div>
                         </div>
                     </div>
