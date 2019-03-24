@@ -13,9 +13,10 @@
                 Types of genetic crosses
             </div>
             <center>
-                <button class="btn btn-outline-success">Type of crossing 1</button>
-                <button class="btn btn-outline-success">Type of crossing 2</button>
-                <button class="btn btn-outline-success">Type of crossing 3</button>
+                <button class="btn btn-outline-success">Uniform Crossing</button>
+                <button class="btn btn-outline-success">Multipoint Crossing</button>
+                <button class="btn btn-outline-success" v-on:click="selectPopulation()">Segmented Crossing</button>
+                <button class="btn btn-outline-success" v-on:click="ramdomList()">Random Crossing</button>
                 <br><br>
                 <button class="btn btn-outline-danger" v-on:click="fillPopulation()" v-bind:disabled="population.length > 0">
                     Fill Population
@@ -42,7 +43,6 @@
             <div class="container col-md-6">
                 <center>
                     <h1>Best Gene</h1>
-                    <br>{{population[1]}}
                 </center>
             </div>
         </div>
