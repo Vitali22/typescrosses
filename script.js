@@ -37,8 +37,9 @@ new Vue({
 					cromosoma.geneNumber = countGene;
 
 					if(cromosoma.color==="bluePixel")
+					{
 						cromosoma.chromosomeValue = 1;
-
+					}
 					gene.push(cromosoma);
 				}
 				this.population.push(gene);
@@ -51,7 +52,7 @@ new Vue({
 		selectPopulation: function () 
 		{	
 			for (let index = 0; index < 20; index++) 
-			{		index: 0,
+			{		
 				this.luckyPopulation.push(this.population[this.listOfRandoms[index]]);
 			}
 		},
