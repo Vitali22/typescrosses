@@ -21,7 +21,7 @@ new Vue({
 			}
 		},
 		fillPopulation: function () {
-			for (countGene = 0; countGene < 20; countGene++) {
+			for (countGene = 0; countGene < 100; countGene++) {
 					gene = [];
 				for (countChromosome = 0; countChromosome < 20; countChromosome++)
 				{
@@ -56,7 +56,7 @@ new Vue({
 				this.luckyPopulation.push(this.population[this.listOfRandoms[index]]);
 			}
 		},
-		ramdomList: function ()
+		randomList: function ()
 		{	
 			for (let index = 0; index < 20; index++) 
 			{	
